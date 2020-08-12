@@ -7,5 +7,3 @@
 - Edit this README
 - Edit the `.zenodo.json` file
 - Edit the `manuscript.md` file
-
-
