@@ -1,3 +1,20 @@
+---
+documentclass: report
+classoption: oneside
+date: false
+polyglossia-lang:
+  name: french
+geometry:
+  - left = 2cm
+  - right = 2cm
+  - top = 2cm
+  - bottom = 2cm
+fontsize: 12pt
+toc: true
+linestretch: false
+bibliography: [./rreferences.bib] # This field is overid when pandoc is use, but it allow to use citation completion when writting.
+---
+
 # The model
 
 This is a citation: @HampAnde15 -- we can also have citations in brackets
