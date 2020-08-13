@@ -4,10 +4,10 @@
   "language": "en",
   "creators": [
     {
-      "affiliations": ["Université de Montréal", "Québec Centre for Biodiversity Sciences"],
-      "familyname": "Poisot",
-      "givennames": "Timothée",
-      "orcid": "0000-0002-0735-5184"
+      "affiliations": ["Sorbonne Université", "Master Sciences de la Mer"],
+      "familyname": "Leroy",
+      "givennames": "François",
+      "orcid": "0000-000-0000-0000"
     }
   ],
   "description": "This document is intended purely as a demo for the manuscript building system.",
