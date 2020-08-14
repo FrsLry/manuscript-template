@@ -67,7 +67,7 @@ jobs:
         with:
           working_directory: dist
           root_file: ${{ env.repo_name }}.tex
-          args: "-c"
+          args: "-f -interaction=nonstopmode --file-line-error -lualatex"
       - name: Save artifacts
         if: always()
         uses: actions/upload-artifact@master
