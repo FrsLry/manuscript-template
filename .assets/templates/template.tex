@@ -4,6 +4,15 @@
 \documentclass[$if(fontsize)$$fontsize$,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
 
 
+%% Package fontspec
+\usepackage{fontspec}
+\setmainfont{STIX2Text-Regular}[
+  Path           = ./fonts/,
+  Extension      = .otf,
+  BoldFont       = STIX2Text-Bold,
+  ItalicFont     = STIX2Text-Italic,
+  BoldItalicFont = STIX2Text-BoldItalic]
+
 %\documentclass[11pt]{scrartcl}
 \usepackage{kpfonts}
 \usepackage[T1]{fontenc}
