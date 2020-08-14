@@ -37,6 +37,10 @@ $if(date)$
 \date{$date$}
 $endif$
 
+$if(creators)$
+\author{$for(creators)$$creators.givennames$ \textsc{$creators.familyname$}\\$endfor$}
+$endif$
+
 % At last:
 % The document itself!:
 
