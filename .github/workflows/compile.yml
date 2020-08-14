@@ -53,7 +53,7 @@ jobs:
           cp .assets/templates/{style.less,jquery.tocify.css,bootstrap.css} dist/css/
           cp .assets/templates/{jquery-1.8.3.min.js,jquery-ui-1.9.1.custom.min.js,jquery.tocify.min.js} dist/js/
       - name: Build the tex file
-        run: pandoc manuscript.md -s -o dist/${{ env.repo_name }}.tex --filte pandoc-xnos --bibliography=references.json --metadata-file=metadata.json --template=.assets/templates/copyedit.tex
+        run: pandoc manuscript.md -s -o dist/${{ env.repo_name }}.tex --filte pandoc-xnos --bibliography=references.json --metadata-file=metadata.json --template=.assets/templates/template.tex
       - name: File check
         run: ls -lah dist/
       - name: Build the pdf file
