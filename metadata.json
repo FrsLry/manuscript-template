@@ -1,7 +1,9 @@
 {
   "title": "Some notes on population dynamics",
+  "upload_type": "preprint",
+  "access_right": "open",
   "license": "CC-BY",
-  "language": "en",
+  "language": "fr",
   "creators": [
     {
       "affiliations": ["Sorbonne Université", "Master Sciences de la Mer"],
@@ -14,5 +16,4 @@
   "keywords": ["population dynamics", "differential equations", "community ecology"],
   "filename": "manuscript-template",
   "link-citations": true
-  
 }
