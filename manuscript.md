@@ -1,5 +1,9 @@
 ---
-toc : true
+documentclass: report
+classoption: oneside
+date: true
+fontsize: 12 pt
+toc: true
 ---
 
 # The model

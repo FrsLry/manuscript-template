@@ -1,7 +1,10 @@
 %!TEX TS-program = xelatex
 
+% Automate document class, classoption, fontsize and use the coma as sep at the top of the manuscript.md
+\documentclass[$if(fontsize)$$fontsize$,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
 
-\documentclass[11pt]{scrartcl}
+
+%\documentclass[11pt]{scrartcl}
 \usepackage{kpfonts}
 \usepackage[T1]{fontenc}
 \usepackage{amsmath}
