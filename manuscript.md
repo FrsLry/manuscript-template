@@ -1,7 +1,7 @@
 ---
 documentclass: report
 classoption: oneside
-date: true
+date: false
 fontsize: 12 pt
 toc: true
 ---
