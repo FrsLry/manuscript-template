@@ -38,8 +38,20 @@ jobs:
           mkdir -p dist
           cp -r figures dist/
           cp references.json dist/
+      - name: Install additionnal fonts
+        run: |
+          wget --no-check-certificate https://github.com/stipub/stixfonts/archive/master.zip
+          unzip master.zip
+          mkdir -p dist/fonts
+          mv stixfonts-master/OTF/*.otf dist/fonts/
+          rm -Rf stixfonts-master/
       - name: Build the website
-        run: pandoc manuscript.md -o dist/index.html --filter pandoc-xnos --bibliography=references.json --metadata-file=metadata.json --template=.assets/templates/template.html
+        run: |
+        pandoc manuscript.md -o dist/index.html --filter pandoc-xnos --bibliography=references.json --metadata-file=metadata.json --template=.assets/templates/template.html --include-in-header=.assets/templates/tocify
+        mkdir dist/css/
+          mkdir dist/js/
+          cp .assets/templates/{style.less,jquery.tocify.css,bootstrap.css} dist/css/
+          cp .assets/templates/{jquery-1.8.3.min.js,jquery-ui-1.9.1.custom.min.js,jquery.tocify.min.js} dist/js/
       - name: Build the tex file
         run: pandoc manuscript.md -s -o dist/${{ env.repo_name }}.tex --filte pandoc-xnos --bibliography=references.json --metadata-file=metadata.json --template=.assets/templates/copyedit.tex
       - name: File check
