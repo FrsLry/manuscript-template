@@ -2,7 +2,12 @@
 documentclass: report
 classoption: oneside
 date: false
-fontsize: 12 pt
+geometry:
+  - left = 2cm
+  - right = 2cm
+  - top = 2cm
+  - bottom = 2cm
+fontsize: 12pt
 toc: true
 ---
 
