@@ -113,14 +113,14 @@ $endif$
 % Here again is a variable you can specify on the commandline
 % `markdown2pdf my.txt --number-sections --xetex --template=/wherever/this/is -o my.pdf`
 
-$if(numbersections)$
-\setcounter{secnumdepth}{$if(secnumdepth)$$secnumdepth$$else$5$endif$}
-$else$
-\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
-$endif$
+%$if(numbersections)$
+%\setcounter{secnumdepth}{$if(secnumdepth)$$secnumdepth$$else$5$endif$}
+%$else$
+%\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+%$endif$
 
-\usepackage{caption}
-\usepackage{cleveref}
+%\usepackage{caption}
+%\usepackage{cleveref}
 
 %\documentclass[11pt]{scrartcl} !!! Don't uncomment because already given on the .md
 %\usepackage{kpfonts}
