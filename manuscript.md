@@ -2,8 +2,8 @@
 documentclass: report
 classoption: oneside
 date: false
-polyglossia-lang:
-  name: french
+#polyglossia-lang:
+#  name: french
 geometry:
   - left = 2cm
   - right = 2cm
