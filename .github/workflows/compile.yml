@@ -38,13 +38,17 @@ jobs:
           mkdir -p dist
           cp -r figures dist/
           cp references.json dist/
-      - name: Install additionnal fonts
+      #- name: Install additionnal fonts
+      #  run: |
+      #    wget --no-check-certificate https://github.com/stipub/stixfonts/archive/master.zip
+      #    unzip master.zip
+      #    mkdir -p dist/fonts
+      #    mv stixfonts-master/OTF/*.otf dist/fonts/
+      #    rm -Rf stixfonts-master/
+      - name: Install calibri
         run: |
-          wget --no-check-certificate https://github.com/stipub/stixfonts/archive/master.zip
-          unzip master.zip
           mkdir -p dist/fonts
-          mv stixfonts-master/OTF/*.otf dist/fonts/
-          rm -Rf stixfonts-master/
+          cp fonts/ dist/fonts
       - name: Build the website
         run: |
           pandoc manuscript.md -o dist/index.html --filter pandoc-xnos --bibliography=references.json --metadata-file=metadata.json --template=.assets/templates/template.html --include-in-header=.assets/templates/tocify
