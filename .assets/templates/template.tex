@@ -3,6 +3,11 @@
 % Automate document class, classoption, fontsize and use the coma as sep at the top of the manuscript.md
 \documentclass[$if(fontsize)$$fontsize$,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
 
+%% Package geometry
+$if(geometry)$
+\usepackage[$if(papersize)$$papersize$paper,$endif$$for(geometry)$$geometry$$sep$,$endfor$]{geometry}
+$endif$
+\usepackage{pdflscape}
 
 %% Package polyglossia
 % \usepackage{polyglossia}
