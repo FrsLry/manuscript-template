@@ -9,6 +9,13 @@ $if(geometry)$
 $endif$
 \usepackage{pdflscape}
 
+%% Package polyglossia
+\usepackage{polyglossia}
+\setmainlanguage[$polyglossia-lang.options$]{$polyglossia-lang.name$}
+$for(polyglossia-otherlangs)$
+  \setotherlanguage[$polyglossia-otherlangs.options$]{$polyglossia-otherlangs.name$}
+$endfor$
+
 %% Package fontspec
 \usepackage{fontspec}
 \setmainfont{calibri}[
