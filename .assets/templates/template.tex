@@ -59,6 +59,18 @@ $endif$
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
+\usepackage{array}
+\newcommand{\PreserveBackslash}[1]{\let\temp=\\#1\let\\=\temp}
+\let\PBS=\PreserveBackslash
+
+% Create new command to deal with with pandoc's super/sub script.
+$if(subscript)$
+\newcommand{\textsubscr}[1]{\ensuremath{_{\scriptsize\textrm{#1}}}}
+$endif$
+$if(superscript)$
+\newcommand{\textsuperscr}[1]{\ensuremath{^{\scriptsize\textrm{#1}}}}
+$endif$
+
 %\documentclass[11pt]{scrartcl} !!! Don't uncomment because already given on the .md
 %\usepackage{kpfonts}
 \usepackage[T1]{fontenc}
