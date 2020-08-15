@@ -94,6 +94,14 @@ linkcolor=black,%
 urlcolor=black}
 \usepackage{url}
 
+%% Graphics
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth
+\else\Gin@nat@width\fi}
+\makeatother
+\let\Oldincludegraphics\includegraphics
+\renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=\maxwidth]{#1}}
 
 %\documentclass[11pt]{scrartcl} !!! Don't uncomment because already given on the .md
 %\usepackage{kpfonts}
