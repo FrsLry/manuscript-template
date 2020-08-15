@@ -103,6 +103,12 @@ urlcolor=black}
 %\let\Oldincludegraphics\includegraphics
 %\renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=\maxwidth]{#1}}
 
+%% linestreching
+$if(linestretch)$
+\usepackage{setspace}
+\setstretch{$linestretch$}
+$endif$
+
 %\documentclass[11pt]{scrartcl} !!! Don't uncomment because already given on the .md
 %\usepackage{kpfonts}
 \usepackage[T1]{fontenc}
