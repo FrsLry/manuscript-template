@@ -1,4 +1,4 @@
-% !TEX TS-program = lualatex
+%!TEX TS-program = lualatex
 
 % Automate document class, classoption, fontsize and use the coma as sep at the top of the manuscript.md
 \documentclass[$if(fontsize)$$fontsize$,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
@@ -27,17 +27,17 @@ $endfor$
 
 %\documentclass[11pt]{scrartcl}
 %\usepackage{kpfonts}
-\usepackage[T1]{fontenc}
-\usepackage{amsmath}
-\usepackage[english]{babel}
-\usepackage{geometry}
-\geometry{verbose,letterpaper,tmargin=3cm,bmargin=3cm,lmargin=3cm,rmargin=3cm}
+%\usepackage[T1]{fontenc}
+%\usepackage{amsmath}
+%\usepackage[english]{babel}
+%\usepackage{geometry}
+%\geometry{verbose,letterpaper,tmargin=3cm,bmargin=3cm,lmargin=3cm,rmargin=3cm}
 
-\input{../.assets/templates/pandoc}
+%\input{../.assets/templates/pandoc}
 
-\usepackage[hang,flushmargin]{footmisc}
+%\usepackage[hang,flushmargin]{footmisc}
 
-\setlength{\parindent}{0pt}
+\setlength{\parindent}{0pt} % Remove indentation
 \setlength{\parskip}{6pt plus 2pt minus 1pt}
 
 \pagestyle{plain}
