@@ -59,6 +59,42 @@ $endif$
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
+%%%%%%%%
+% All the comment chunck below seems to prevent the build to work 
+%%%%%%%%
+%\usepackage{array}
+%\newcommand{\PreserveBackslash}[1]{\let\temp=\\#1\let\\=\temp}
+%\let\PBS=\PreserveBackslash
+
+%% Create new command to deal with with pandoc's super/sub script.
+%$if(subscript)$
+%\newcommand{\textsubscr}[1]{\ensuremath{_{\scriptsize\textrm{#1}}}}
+%$endif$
+%$if(superscript)$
+%\newcommand{\textsuperscr}[1]{\ensuremath{^{\scriptsize\textrm{#1}}}}
+%$endif$
+% Web-style links:
+
+% markdown inclines us to use links, since our texts can be made into html. 
+% Why not have clickable blue links even in 
+% learned, scientific, religious, juridical, poetical and other suchlike texts? 
+% Never mind that they have been proven to destroy the nervous system!
+
+% First, what about the fact that links like http://example.com are 
+% technically code and thus must not be broken across lines? 
+% [breaklinks=true] to the rescue!
+
+% Nowadays LaTeX can handle all of this with another half million macros:
+
+\usepackage[breaklinks=true]{hyperref}
+\hypersetup{colorlinks,%
+citecolor=black,%
+filecolor=black,%
+linkcolor=black,%
+urlcolor=black}
+\usepackage{url}
+
+
 %\documentclass[11pt]{scrartcl} !!! Don't uncomment because already given on the .md
 %\usepackage{kpfonts}
 \usepackage[T1]{fontenc}
