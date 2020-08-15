@@ -47,8 +47,7 @@ jobs:
       #    rm -Rf stixfonts-master/
       - name: Install calibri
         run: |
-          mkdir -p dist/fonts
-          cp -r fonts/*.ttf dist/fonts/
+          cp -r fonts dist/
       - name: Build the website
         run: |
           pandoc manuscript.md -o dist/index.html --filter pandoc-xnos --bibliography=references.json --metadata-file=metadata.json --template=.assets/templates/template.html --include-in-header=.assets/templates/tocify
