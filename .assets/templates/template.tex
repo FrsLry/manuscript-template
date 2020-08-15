@@ -132,12 +132,15 @@ $endif$
 \usepackage{fancyvrb}
 \newcommand{\VerbBar}{|}
 \newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
 
 
 %\documentclass[11pt]{scrartcl} !!! Don't uncomment because already given on the .md
 %\usepackage{kpfonts}
-%\usepackage[T1]{fontenc}
-%\usepackage{amsmath}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
 %\usepackage[english]{babel}
 %\usepackage{geometry}
 %\geometry{verbose,letterpaper,tmargin=3cm,bmargin=3cm,lmargin=3cm,rmargin=3cm}
