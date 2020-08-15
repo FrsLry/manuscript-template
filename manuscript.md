@@ -1,7 +1,7 @@
 ---
 documentclass: report
 classoption: oneside
-date: false
+date: false # if true, date doesn't appears and if false, it appears...
 polyglossia-lang:
   name: french
 geometry:
