@@ -1,15 +1,15 @@
-%!TEX TS-program = lualatex
+% !TEX TS-program = lualatex
 
 % Automate document class, classoption, fontsize and use the coma as sep at the top of the manuscript.md
 \documentclass[$if(fontsize)$$fontsize$,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
 
 
 %% Package polyglossia
-%\usepackage{polyglossia}
-%\setmainlanguage[$polyglossia-lang.options$]{$polyglossia-lang.name$}
-%$for(polyglossia-otherlangs)$
-%  \setotherlanguage[$polyglossia-otherlangs.options$]{$polyglossia-otherlangs.name$}
-%$endfor$
+% \usepackage{polyglossia}
+% \setmainlanguage[$polyglossia-lang.options$]{$polyglossia-lang.name$}
+% $for(polyglossia-otherlangs)$
+%   \setotherlanguage[$polyglossia-otherlangs.options$]{$polyglossia-otherlangs.name$}
+% $endfor$
 
 %% Package fontspec
 \usepackage{fontspec}
@@ -20,7 +20,7 @@
   ItalicFont     = calibrili,
   BoldItalicFont = calibriz]
 
-\documentclass[11pt]{scrartcl}
+%\documentclass[11pt]{scrartcl}
 \usepackage{kpfonts}
 \usepackage[T1]{fontenc}
 \usepackage{amsmath}
