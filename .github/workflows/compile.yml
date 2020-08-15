@@ -47,7 +47,7 @@ jobs:
       #    rm -Rf stixfonts-master/
       - name: Install calibri
         run: |
-          mkdir -p dist/fonts/
+          mkdir -p dist/fonts
           cp -r fonts/ dist/fonts/
       - name: Build the website
         run: |
